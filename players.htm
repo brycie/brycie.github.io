@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="utf-8">
+		<title>MarulandRP - Serverlist</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+		<div class="noscroll">
+			<button onclick="location.reload()">Refresh</button>
+			<ul>
+				<li><b>Main Server - <span id="playerCount">0</span> / 60 Players</b></li>
+			</ul>
+		</div>
+
+		<script>
+			(function() {
+				let xhr = new XMLHttpRequest();
+				xhr.open('GET', 'http://allow-any-origin.appspot.com/http://51.89.21.175:30120/players.json');
+				xhr.send();
+
+				xhr.onload = function() {
+				  if (xhr.status != 200) {
+				    //alert('Error ${xhr.status}: ${xhr.statusText}'');
+				  } else {
+				    var data = JSON.parse(xhr.responseText);
+				    document.getElementById("playerCount").innerHTML = data.length;
+				  }
+				};
+
+				xhr.onerror = function() {
+				  alert("Request failed");
+				};
+			})();
+		</script>
+	</body>
+</html>
