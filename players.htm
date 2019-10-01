@@ -9,7 +9,6 @@
 
 	<body>
 		<div class="noscroll">
-			<button onclick="location.reload()">Refresh</button>
 			<ul>
 				<li><b>Main Server - <span id="playerCount">0</span> / 60 Players</b></li>
 			</ul>
@@ -23,7 +22,7 @@
 
 				xhr.onload = function() {
 				  if (xhr.status != 200) {
-				    //alert('Error ${xhr.status}: ${xhr.statusText}'');
+				    alert('Error ${xhr.status}: ${xhr.statusText}'');
 				  } else {
 				    var data = JSON.parse(xhr.responseText);
 				    document.getElementById("playerCount").innerHTML = data.length;
