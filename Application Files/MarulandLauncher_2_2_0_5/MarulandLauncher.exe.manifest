@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MarulandLauncher.exe" version="2.2.0.5" publicKeyToken="4591a7bdfaa332cb" language="neutral" processorArchitecture="amd64" type="win32" />
+  <description asmv2:iconFile="kfkyga56t5__2__mc0_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MarulandLauncher" version="0.0.0.1" publicKeyToken="581EBEBE9522B66C" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="MarulandLauncher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EasyNetQ.dll" size="391680">
+      <assemblyIdentity name="EasyNetQ" version="3.7.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8scdxC4yizqLelZDS3EYH1dqsyOKc9nLYSnvjWpJM9A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="162816">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.11.12.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>h/f8y286NUpWYyHcPPhW7Kbl8pvAMz+zMljQkX4mPnM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MarulandLauncher.exe" size="1768416">
+      <assemblyIdentity name="MarulandLauncher" version="0.0.0.1" publicKeyToken="581EBEBE9522B66C" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NXGiQhaqcieol7CLbxYbI4TH6951lMXxaTV/XAs3pOs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Diagnostics.Tracing.EventSource.dll" size="170288">
+      <assemblyIdentity name="Microsoft.Diagnostics.Tracing.EventSource" version="1.1.28.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>og9tbA2uesnHwpW4GdCFvfx8+rEj6PxMpN39CohwHQQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NetSparkle.Net40.dll" size="144896">
+      <assemblyIdentity name="NetSparkle.Net40" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>O0h0tfCednK3HvXVi0ZIQXJF6gXyuXFX41rGPmLjYWQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bg\NetSparkle.Net40.resources.dll" size="28160">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="bg" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2lOW05jkV70+AVV4KDW1myrHmHp1I0kfQavIlYBd9zY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\NetSparkle.Net40.resources.dll" size="29184">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1kD/8CFMclYLvz56STpzV/KLFVNAxqFX07JFfKLmOqU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es-MX\NetSparkle.Net40.resources.dll" size="29184">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="es-MX" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rtjwa/Ef1CcOI7/8Ac1w3BxNbM++J6l680gwZ/QdpLg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\NetSparkle.Net40.resources.dll" size="31744">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9zfvEcTHThXOmPSOPcN7uscl3Q70zK3altN5JDopJiE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it\NetSparkle.Net40.resources.dll" size="28160">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="it" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PIy7F/8+ehX9grq5mULsl9S7ktFMMKJ9V0DaHx+C8mU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="lt\NetSparkle.Net40.resources.dll" size="29184">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="lt" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RfsjEtv7z3mO/CR61YfwpcnEmJAnKEAuZ/v+dglTOi8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl\NetSparkle.Net40.resources.dll" size="29696">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="nl" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NZzRtPCqrKNLNOAuBh8hDLqXyfKBJnXfmJsQPlfSbtY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\NetSparkle.Net40.resources.dll" size="29184">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>34K2jGiJXL6MiCJNGqqIRYDhodcPppezq+0FKEh8U5Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\NetSparkle.Net40.resources.dll" size="33280">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>P1r0ghWsD3AUINgDfeWiyXh7ClPFTUbFkXTnYYA53ZM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\NetSparkle.Net40.resources.dll" size="32768">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K2cfiFcn3BB3ObGj9UqaiWdj/pX8RR7E7MMtlhNU+gI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-TW\NetSparkle.Net40.resources.dll" size="32256">
+      <assemblyIdentity name="NetSparkle.Net40.resources" version="1.1.0.0" language="zh-TW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>L7aPv60c4o8YnOUia37LYgZj6diDxRD7rr2WgpzGacE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="675752">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NZjMytW1Nf6m+TZiEHpBg7/WFnvx0PgCYENgk+3C468=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RabbitMQ.Client.dll" size="278528">
+      <assemblyIdentity name="RabbitMQ.Client" version="5.0.0.0" publicKeyToken="89E7D7C5FEBA84CE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3MNXogNyYJ3ezl+3kQtBPxTe3sRFJPC0u0WOv10XJbw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="kfkyga56t5__2__mc0_icon.ico" size="131806">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZH13P5Z+JU7Gv5glSohPMyD85H9pRcMoB/aZNrGxIwM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MarulandLauncher.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eSEJjkfolEEv39DK/g+IzGhJd0CZjqwXxowAEpBp2AM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=LAPTOP-E3KSVB0R\liam_" issuerKeyHash="e60729927a32631d71f6b22e9c8563f4e220cf6a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Utrsj/ERDr150webVyio3/0FYAjwONj0O9lzZ7QuOTo=</DigestValue></Reference></SignedInfo><SignatureValue>mLhVgu6b/CY0bJCUPvMj2xDKl3MxLzXptNW2e6usrWqtp1qRr9NWo3D2PqXl8P2fSrSWRd1PPaUZwp0hibbVbDb88MZ7GDGv9unn9aZoaD6yTXKg9CIPshW2DJhMzZm60E8uNFQXbjQuut/mKeZOuZHngj2LMVbtzNQgXUZSS/M=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>oEaWy6vNVg907c+dZmNGYJGaYJlaMxUMiADQ+36JbgLzXltjEsuBNUBIIEzE/C7vKqWMbGTTlifhcxjd+aku/ZPHoiBonGumDtYJEmXAcLcPc0FjcK6xZJMGuBIRbu+ZH59lnv0bNUkLP3tBDvmKiln2gzSOizPN7qJePm52LwU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3a392eb46773d93bf4d838f0086005fddfa828579b07d379bd0e11f18fecda52" Description="" Url=""><as:assemblyIdentity name="MarulandLauncher.exe" version="2.2.0.5" publicKeyToken="4591a7bdfaa332cb" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-E3KSVB0R\liam_</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3Tk0GaOtS3fSwboedx4YVOeAaEssA7KLC51iFlK6ECA=</DigestValue></Reference></SignedInfo><SignatureValue>M616Dem6bx2ShVKwW6J3G9M4B0wk5Gz9UAJBNyjYMmzVwMk6IPw2pY91hLHWww0yvMNaS4I9IH58AWTnh/yF9vfdy7jG7oQfRWjSmVeFMLXkzZOep5E9DJECMZBNctz1Ku/bUobRHnxgAOVmzR3Xstw1gi9cnPIxJ4zuDNz7GLk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>oEaWy6vNVg907c+dZmNGYJGaYJlaMxUMiADQ+36JbgLzXltjEsuBNUBIIEzE/C7vKqWMbGTTlifhcxjd+aku/ZPHoiBonGumDtYJEmXAcLcPc0FjcK6xZJMGuBIRbu+ZH59lnv0bNUkLP3tBDvmKiln2gzSOizPN7qJePm52LwU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQH1abArTZx6lES/yO/tzpvTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBFADMASwBTAFYAQgAwAFIAXABsAGkAYQBtAF8wHhcNMTkxMDAxMTQ0NjU2WhcNMjAwOTMwMjA0NjU2WjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBFADMASwBTAFYAQgAwAFIAXABsAGkAYQBtAF8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKBGlsurzVYPdO3PnWZjRmCRmmCZWjMVDIgA0Pt+iW4C815bYxLLgTVASCBMxPwu7yqljGxk05Yn4XMY3fmpLv2Tx6IgaJxrpg7WCRJlwHC3D3NBY3CusWSTBrgSEW7vmR+fZZ79GzVJCz97QQ75iopZ9oM0joszze6iXj5udi8FAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAWmh9WofaIBgLmmjDDwQBPZof74bo9JfadWTFL9N/OH22CCW/WMc2tj/g7dylZ6A6XmkO5dSSSuP0N6yAHewY/HaCxI0R0kwCsXb2uAmIQHyIs3iipuCY2EI2dST9ROW7bDML7+dQFdLVQtgMemqNxQywvxVPrQftxYFM7kRkujo=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
