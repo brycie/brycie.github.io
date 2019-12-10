@@ -51,15 +51,14 @@ body {
 .container {
     font-size: 40px;
     min-height: 100%;
-    width: 50%;
-    margin-left:500px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
     background: #95C623;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-    grid-gap: 20px;
+    grid-gap: 25px;
   }
   p {
     display: flex;
