@@ -1,0 +1,139 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(11, 37, 69, 1);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgba(238, 244, 237, 1);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } 
+  .active {
+    background-color: rgba(11, 37, 69, 1);
+  }
+  a:active {
+    background-color: rgba(11, 37, 69, 1);
+  }
+  a:hover {
+    background-color: rgba(19, 49, 92, 1);
+  }
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(11, 37, 69, 1);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  
+  .nav-list {
+    display: flex;
+    --margin-right: 2rem;
+  }
+  
+  body {
+    background: rgba(19, 49, 92, 1)
+  }
+  .container {
+      font-size: 40px;
+      min-height: 100%;
+      min-width: 100%;
+      margin-top: 20px;
+      background: rgba(19, 49, 92, 1);
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      grid-gap: 20px;
+    }
+    p {
+      display: flex;
+      font-size: 16px;
+      max-width: 900px;
+    }
+    .section {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      min-height: auto;
+      width: auto;
+      background: rgba(11, 37, 69, 1);  
+      color: white;
+  }
+  
+    .welcome {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      height: 100vh;
+      width: auto;
+      background-color: rgba(19, 49, 92, 1); 
+      color: white;
+  }
+  
+    .project-tile{background:rgba(11, 37, 69, 1);}
+    .project-tile1{background:rgba(11, 37, 69, 1);}
+    .project-tile2{background:rgba(11, 37, 69, 1);}
+    .project-tile3 {background:rgba(11, 37, 69, 1);}
+    .project-tile4{background:rgba(11, 37, 69, 1);}
+    .project-tile5{background:rgba(11, 37, 69, 1);}
+  
+  .contact-form {
+    margin-bottom: 30px;
+  }
+  
+  .footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(11, 37, 69, 1);
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+  
+   @media (max-width: 350px) {
+  }
+  
+  .heading {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .typo {
+      color: white;
+      cursor: default;
+      font-family: 'Oswald', Helvetica, Arial, sans-serif;
+      font-size: 7vmax;
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0;
+      outline: none;
+      padding: 0 10% 1.2% 10%;
+      text-align: center;
+      text-transform: uppercase;
+      transition: color $anim; // To work with JS
+  }
+  
+  
