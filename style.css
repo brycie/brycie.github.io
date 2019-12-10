@@ -84,6 +84,7 @@ body {
     width: auto;
     background-color: #95C623; 
     color: #002626;
+    font-family: 'Indie Flower', cursive;
 }
 
   .project-tile{background:rgba(11, 37, 69, 1);}
